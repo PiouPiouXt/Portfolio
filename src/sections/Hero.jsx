@@ -1,8 +1,18 @@
+import { useMemo } from 'react';
 import { Button } from "@/components/Button";
-import { ArrowRight} from "lucide-react";
+import { ArrowRight, Cat, Send } from 'lucide-react';
 import { MagicButton } from "@/assets/MagicButton.jsx";
 
+const generateRandomDots = () =>
+  [...Array(30)].map(() => ({
+    left: Math.random() * 100,
+    top: Math.random() * 100,
+    duration: 15 + Math.random() * 20,
+    delay: Math.random() * 5,
+  }));
+
 export const Hero = () => {
+  const dots = useMemo(() => generateRandomDots(), []);
   return <section className="relative min-h-screen flex items-center overflow-hidden">
     {/* Background */}
     <div className="absolute inset-0">
@@ -15,16 +25,16 @@ export const Hero = () => {
 
     {/* Green dots */}
     <div className="absolute inset-0 overflow-hidden pointer-events-none">
-      {[...Array(30)].map((_, i) => (
+      {dots.map((dot, i) => (
         <div
+          key={i}
           className="absolute w-1.5 h-1.5 rounded-full opacity-60"
           style={{
             backgroundColor: "#20B25D",
-            left: `${Math.random() * 100}%`,
-            top: `${Math.random() * 100}%`,
-            animation: `slow-drift ${15 + Math.random() * 20
-              }s ease-in-out infinite`,
-            animationDelay: `${Math.random() * 5}s`,
+            left: `${dot.left}%`,
+            top: `${dot.top}%`,
+            animation: `slow-drift ${dot.duration}s ease-in-out infinite`,
+            animationDelay: `${dot.delay}s`,
           }}
         />
       ))}
@@ -71,9 +81,9 @@ export const Hero = () => {
           <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
             <span className="text-sm text-muted-foreground">Follow me: </span>
             {[
-              { icon: Github, href: "#" },
-              { icon: Linkedin, href: "#" },
-              { icon: Twitter, href: "#" },
+              { icon: Cat, href: "#" },
+              { icon: Send, href: "#" },
+              // { icon: , href: "#" },
             ].map((social, idx) => (
               <a
                 key={idx}
@@ -86,6 +96,34 @@ export const Hero = () => {
           </div>
         </div>
         {/* Right column - Profile image*/}
+        <div className='relative animate-fade-in animation-delay-300'>
+            {/* Profile image */}
+            <div className='relative max-w-md mx-auto'>
+              <div
+                className="absolute inset-0 
+              rounded-3xl bg-gradient-to-br 
+              from-primary/30 via-transparent 
+              to-primary/10 blur-2xl animate-pulse"
+              />
+              <div className='relative glass rounded-3xl p-2 glow-border'>
+                <img 
+                src='/profile-picture.jpg' 
+                alt='Tsiresy RAZAKARIASA' 
+                className='w-full aspext=[4/5] object-cover rounded-2xl'
+              />
+                {/* Floating badge */}
+                <div className='absolute -bottom-4 -right-4 glass rounded-xl px-4 px-3 animate-float'>
+                  <div>
+                    <div />
+                    <span>Code with Love</span>
+                  </div>
+                </div>
+                {/* Stats badge */}
+              </div>
+            </div>
+
+
+        </div>
       </div>
     </div>
   </section>
