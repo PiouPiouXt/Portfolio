@@ -165,7 +165,7 @@ export const Hero = () => {
 
     <div
       className="absolute bottom-8 left-1/2 -translate-x-1/2 
-      animate-fade-in animation-delay-800"
+      animate-fade-in animation-delay-800"  
     >
       <a
         href="#about"
