@@ -87,7 +87,9 @@ export const Hero = () => {
             <Button size="lg">
               Contact Me <ArrowRight />
             </Button>
-            <MagicButton />
+            <MagicButton>
+              Download CV
+            </MagicButton>
           </div>
 
           {/* Social links */}

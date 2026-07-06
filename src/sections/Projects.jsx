@@ -1,4 +1,5 @@
-import { ArrowUpRight,Cat } from "lucide-react";
+import { ArrowUpRight, Cat } from "lucide-react";
+import { MagicButton } from "@/assets/MagicButton.jsx"
 
 const projects = [
   {
@@ -63,17 +64,48 @@ export const Projects = () => {
                 {/* Overlay Links */}
                 <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 duration-300">
                   <a href={project.link} className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all">
-                    <ArrowUpRight />
+                    <ArrowUpRight className="w-5 h-5" />
                   </a>
-                  <a href="#">
-                    <Cat />
+                  <a href="#" className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all">
+                    <Cat className="w-5 h-5" />
                   </a>
                 </div>
+              </div>
 
-
+              {/* Content */}
+              <div className="p-6 space-y-4">
+                <div className="flex items-start justify-between">
+                  <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
+                    {project.title}
+                  </h3>
+                  <ArrowUpRight className="w-5 h-5
+                  text-muted-foreground group-hover:text-primary
+                  group-hover:translate-x-1
+                  group:hover:-translate-y-1 transition-all"/>
+                </div>
+                <p className="text-muted-foreground text-sm">{project.description}</p>
+                <div className="flex flex-wrap gap-2">
+                  {project.tags.map((tag, tagIdx) => (
+                    <span
+                      key={tagIdx}
+                      className="px-4 px-y rounded-full bg-surface text-sd font-medium border 
+                      border-border/50 text-muted-foreground hover:border-primary/50 hover:text-primary transition-all duration-300"
+                    >
+                      {tag}
+                    </span>
+                  )
+                  )}
+                </div>
               </div>
             </div>
           ))}
+        </div>
+
+        {/* View all CTA */}
+        <div className="text-center mt-12 animate-fade-in animation-delay-500">
+          <MagicButton>
+            View all projects
+          </MagicButton>
         </div>
       </div>
     </section>
