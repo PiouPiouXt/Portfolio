@@ -114,6 +114,7 @@
     0% {
       transform: translateX(0);
     }
+
     100% {
       transform: translateX(-50%);
     }
@@ -123,12 +124,12 @@
     animation: fade-in .3s ease-out both;
   }
 
-  .animate-float{
+  .animate-float {
     animation: float 4s ease-in-out infinite;
   }
 
-  .animate-marquee{
-    animation: marquee 30s linear infinite; 
+  .animate-marquee {
+    animation: marquee 30s linear infinite;
   }
 
   .animation-delay-100 {
@@ -159,4 +160,9 @@
     animation-delay: 0.7s;
   }
 
+}
+
+timeline-glow {
+  box-shadow: 0 0 40px color-mix(in srgb, var(--color-primary) 35%, transparent),
+    0 0 80px color-mix(in srgb, var(--color-primary) 25%, transparent);
 }
