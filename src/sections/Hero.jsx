@@ -67,18 +67,20 @@ export const Hero = () => {
 
           {/* Headline */}
           <div className="space-y-4">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
-              Lorem <span className="text-primary glow-text"> ipsum </span>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight animate-fade-in animation-delay-100">
+              Design, <span className="text-primary glow-text text-3xl md:text-4xl lg:text-5xl"> development </span>
               <br />
               <span className="font-serif italic font-normal text-white">
-                Lorem.
+                Managing
               </span>
             </h1>
 
+
+
             <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, id nulla?
-              Cupiditate dolores officia ducimus, et voluptatem perspiciatis quos dicta fugiat
-              incidunt amet assumenda nisi atque doloremque asperiores quisquam recusandae!
+              and deployment of modern web applications in total autonomy.
+              Specialized in translating UI mockups into functional, high-performance, and user experience-centric interfaces,
+              while managing data in the background.
             </p>
           </div>
 
@@ -167,7 +169,7 @@ export const Hero = () => {
 
     <div
       className="absolute bottom-8 left-1/2 -translate-x-1/2 
-      animate-fade-in animation-delay-800"  
+      animate-fade-in animation-delay-800"
     >
       <a
         href="#about"

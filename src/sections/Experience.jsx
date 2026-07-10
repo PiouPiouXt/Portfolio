@@ -3,7 +3,7 @@ const experiences = [
     period: "2025 - Present",
     company: "Ge-it University",
     description: "Currently pursuing a Bachelor's degree in Computer Science, focusing on software development, algorithms, and data structures. Engaged in various projects that enhance my coding skills and problem-solving abilities.",
-    technologies: ["React", "JavaScript", "Node.js"],
+    technologies: ["React", "JavaScript","MySQL"],
     current: true,
   },
   {
@@ -21,7 +21,7 @@ export const Experience = () => {
     <div className="absolute top-1/2 left-1/4 w-96
     h-96 bg-primary/5 rounded-full blur-3xl -translate-y-1/2"
     />
-    <div className="container mx-auto px-6 relative z-10">
+    <div className="container mx-auto px-6 relative z-9">
       {/* Section Header */}
       <div className="max-w-3xl mb-16">
         <span className="
@@ -52,7 +52,6 @@ export const Experience = () => {
             >
               {/* Timeline Dot */}
               <div className="absolute left-0 md:left-1/2 top-0 w-3 h-3 bg-primary rounded-full -translate-x-1/2 ring-4 ring-background z-10"
-              
               ></div>
 
               {/* Content */}

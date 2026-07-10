@@ -40,9 +40,28 @@ export const About = () => {
             </h2>
 
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
+
+              <p>
+                Passionate student and web developer, I specialize in the integration of UI/UX mockups into fluid and interactive web interfaces.
+              </p>
+              <p>
+                My goal? Take your designs (Figma, Adobe XD) and transform them into clean, structured, and performant code using the React ecosystem.
+              </p>
+              <p>
+                My philosophy is based on two essential pillars: listening carefully to your needs and effective code. Whether it's bringing a custom-made
+                component to life or structuring a complete application, 
+              </p>
+              <p>
+                I make sure that the result is as visually beautiful as it is technically robust.
+              </p>
+              <p>
+                Rigorous and autonomous, I put my university projects and my skills at your service to make your ideas a reality.
+              </p>
+
+              {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sint commodi, aliquam sunt ducimus qui! Quod optio quas tenetur consequuntur alias inventore unde natus iste similique, tempora rem soluta aliquam.</p>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sint commodi, aliquam sunt ducimus qui! Quod optio quas tenetur consequuntur alias inventore unde natus iste similique, tempora rem soluta aliquam.</p>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sint commodi, aliquam sunt ducimus qui! Quod optio quas tenetur consequuntur alias inventore unde natus iste similique, tempora rem soluta aliquam.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sint commodi, aliquam sunt ducimus qui! Quod optio quas tenetur consequuntur alias inventore unde natus iste similique, tempora rem soluta aliquam.</p>
+              */}
             </div>
 
             <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
