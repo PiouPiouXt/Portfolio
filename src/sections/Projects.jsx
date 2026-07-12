@@ -8,7 +8,7 @@ const projects = [
     image: "/projects/fact_electricity.PNG",
     tags: ["React", "Css", "JavaScript"],
     link: "#",
-    github: "#"
+    github: "https://github.com/PiouPiouXt/Fact-Electricity.git"
   },
   {
     title: "Simple e-commerce",
@@ -17,6 +17,22 @@ const projects = [
     tags: ["React", "Css", "JavaScript"],
     link: "#",
     github: "#"
+  },
+  {
+    title: "My Portfolio",
+    description: "Making this portofolio website using React, Tailwind CSS, and Vite.",
+    image: "/projects/Portfolio.PNG",
+    tags: ["React", "Tailwind CSS", "Vite"],
+    link: "#",
+    github: "#"
+  },
+  {
+    title: "Glassmorphism Login UI",
+    description: "Showing my design skills with a glassmorphism login UI design using CSS.",
+    image: "/projects/Login_glassmorphism.PNG",
+    tags: ["React", "Css", "Vite"],
+    link: "#",
+    github: "https://github.com/PiouPiouXt/Glassmorphism-Login-UI.git"
   }
 
 ];

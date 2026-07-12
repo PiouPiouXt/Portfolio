@@ -3,7 +3,7 @@ const experiences = [
     period: "2025 - Present",
     company: "Ge-it University",
     description: "Currently pursuing a Bachelor's degree in Computer Science, focusing on software development, algorithms, and data structures. Engaged in various projects that enhance my coding skills and problem-solving abilities.",
-    technologies: ["React", "JavaScript","MySQL"],
+    technologies: ["React", "JavaScript", "MySQL"],
     current: true,
   },
   {
@@ -56,8 +56,8 @@ export const Experience = () => {
 
               {/* Content */}
               <div className={`pl-8 md: pl-0 ${idx % 2 === 0
-                  ? "md:pr-16 md:text-right"
-                  : "md:col-start-2 md:pl-16"
+                ? "md:pr-16 md:text-right"
+                : "md:col-start-2 md:pl-16"
                 }`}>
 
                 <div className="{`glass p-6 rounded-2xl border border-primary/30 hover:border-primary/50 transition-all duration-500`}">
