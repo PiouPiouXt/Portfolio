@@ -24,7 +24,7 @@ const projects = [
     image: "/projects/Portfolio.PNG",
     tags: ["React", "Tailwind CSS", "Vite"],
     link: "#",
-    github: "#"
+    github: "https://github.com/PiouPiouXt/Portfolio.git"
   },
   {
     title: "Glassmorphism Login UI",
