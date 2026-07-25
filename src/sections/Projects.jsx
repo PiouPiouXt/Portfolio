@@ -30,7 +30,7 @@ const projects = [
     title: "Glassmorphism Login UI",
     description: "Showing my design skills with a glassmorphism login UI design using CSS.",
     image: "/projects/Login_glassmorphism.PNG",
-    tags: ["React", "Css", "Vite"],
+    tags: ["Html", "Css"],
     link: "#",
     github: "https://github.com/PiouPiouXt/Glassmorphism-Login-UI.git"
   }
@@ -48,7 +48,7 @@ export const Projects = () => {
         <div className="text-center mx-auto max-w-3xl mb-16">
           <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in">Featured Work</span>
           <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground">
-            Project that
+            Projects that
             <span className="font-serif italic font-normal text-white">
               {" "}
               make an impact.</span>

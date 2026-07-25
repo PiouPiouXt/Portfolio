@@ -41,7 +41,7 @@ export const Testimonials = () => {
       <div
         className="absolute top-1/2 left-1/2 w-[800px] h-[800px] bg-primary/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"
       />
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-6 relative z-9">
         {/* Section Header */}
         <div
           className="text-center max-w-3xl 
