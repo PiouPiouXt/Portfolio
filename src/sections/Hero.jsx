@@ -1,9 +1,11 @@
 import { useMemo } from 'react';
 import { Button } from "@/components/Button";
-import { ArrowRight, Cat, Send, ChevronDown,Download } from 'lucide-react';
+import { ArrowRight, Cat, Send, ChevronDown, Download } from 'lucide-react';
 import { MagicButton } from "@/assets/MagicButton.jsx";
 
 const skills = [
+  "Strong Algo",
+  "Teamwork",
   "React",
   "Javascript",
   "ES 6+",
@@ -11,7 +13,7 @@ const skills = [
   "PHP",
   "Figma",
   "AI assist",
-  "Love",
+  "Typescript",
   "Git",
   "Github Actions"
 ]
@@ -115,32 +117,11 @@ export const Hero = () => {
         {/* Right column - Profile image*/}
         <div className='relative animate-fade-in animation-delay-300'>
           {/* Profile image */}
-          <div className='relative max-w-md mx-auto'>
-            <div
-              className="absolute inset-0 
-              rounded-3xl bg-gradient-to-br 
-              from-primary/30 via-transparent 
-              to-primary/10 blur-2xl animate-pulse"
-            />
-            <div className='relative glass rounded-3xl p-2 glow-border'>
-              <img
-                src='/profile-picture.jpg'
-                alt='Tsiresy RAZAKARIASA'
-                className='w-full aspext=[4/5] object-cover rounded-2xl'
-              />
-              {/* Floating badge */}
-              <div className='absolute -bottom-4 -right-4 glass rounded-xl px-4 px-3 animate-float'>
-                <div className='flex items-center gap-3'>
-                  <div className='w-3 h-3 bg-green-500 rounded-full animate-pulse' />
-                  <span className='text-sm font-medium'>Code with Love</span>
-                </div>
-              </div>
-              {/* Stats badge */}
-              <div className='absolute -top-10 -left-15 rounded-xl px-4 py-3 animate-float animate-delay-500'>
-                <div className='text-2xl font-bold text-primary'>2+</div>
-                <div className='text-xs text-muted-foreground'>Years Xp</div>
-              </div>
-            </div>
+          <div className='relative max-w-full'>
+            <img src="Hero/Portfolio_test3.png" alt="Myface"
+              className='object-contain
+    [mask-image:linear-gradient(to_bottom,black_60%,transparent_100%)]
+    [-webkit-mask-image:linear-gradient(to_bottom,black_60%,transparent_100%)]'/>
           </div>
         </div>
       </div>

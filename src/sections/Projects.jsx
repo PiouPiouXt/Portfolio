@@ -16,7 +16,7 @@ const projects = [
     image: "/projects/e_commerce.PNG",
     tags: ["React", "Css", "JavaScript"],
     link: "#",
-    github: "#"
+    github: "https://github.com/PiouPiouXt/Ecommerce-Projects.git"
   },
   {
     title: "My Portfolio",
@@ -27,12 +27,12 @@ const projects = [
     github: "https://github.com/PiouPiouXt/Portfolio.git"
   },
   {
-    title: "Glassmorphism Login UI",
-    description: "Showing my design skills with a glassmorphism login UI design using CSS.",
-    image: "/projects/Login_glassmorphism.PNG",
-    tags: ["Html", "Css"],
+    title: "Restaurant manager",
+    description: "restaurant management system built with React Typescript.",
+    image: "/projects/Restaurant_manager.PNG",
+    tags: ["React", "Typescript"],
     link: "#",
-    github: "https://github.com/PiouPiouXt/Glassmorphism-Login-UI.git"
+    github: "https://github.com/PiouPiouXt/Restaurant-manager.git"
   }
 
 ];
@@ -69,7 +69,7 @@ export const Projects = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div
                   className="absolute inset-0 bg-gradient-to-t from-card 
