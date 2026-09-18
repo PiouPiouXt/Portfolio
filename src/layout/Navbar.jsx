@@ -1,11 +1,10 @@
-import { Button } from "@/components/Button";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 const navLinks = [
   { href: "#about", label: "About" },
   { href: "#projects", label: "Projects" },
   { href: "#experience", label: "Experience" },
-  { href: "#contact", label: "Contact" },
+  { href: "#testimonials", label: "Testimonials" },
 ];
 
 export const Navbar = () => {
@@ -47,9 +46,14 @@ export const Navbar = () => {
 
         {/*  CTA button */}
         <div className="hidden md:block">
-          <Button size='sm'>
+          <a size='sm' href="#contact" className="text-sm text-primary-foreground rounded-full bg-primary px-6 py-3 transition-colors"
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+            }}
+          >
             Contact Me
-          </Button>
+          </a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -75,9 +79,19 @@ export const Navbar = () => {
               </a>
             ))}
 
-            <Button onClick={() => setIsMobileMenuOpen(false)}>Contact Me</Button>
+            <div href="#contact" className="mt-4">
+              <a href="#contact" onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+                className="text-sm text-primary-foreground rounded-full bg-primary px-6 py-3 transition-colors"
+              >
+                Contact Me
+              </a>
+            </div>
           </div>
-        </div>)}
-    </header>
+        </div>)
+      }
+    </header >
   );
 };
