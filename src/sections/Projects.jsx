@@ -30,7 +30,7 @@ const projects = [
     title: "Restaurant manager",
     description: "restaurant management system built with React Typescript.",
     image: "/projects/Restaurant_manager.PNG",
-    tags: ["React", "Typescript"],
+    tags: ["React", "Typescript", "Css"],
     link: "#",
     github: "https://github.com/PiouPiouXt/Restaurant-manager.git"
   }

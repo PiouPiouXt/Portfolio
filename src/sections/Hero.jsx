@@ -63,17 +63,17 @@ export const Hero = () => {
           <div className="animate-fade-in">
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
               <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-              Designer + Frontend Developer
+              Frontend Developer
             </span>
           </div>
 
           {/* Headline */}
           <div className="space-y-4">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight animate-fade-in animation-delay-100">
-              Design, <span className="text-primary glow-text text-3xl md:text-4xl lg:text-5xl"> development </span>
+              <span className="text-primary glow-text text-3xl md:text-4xl lg:text-5xl">React </span>Developer
               <br />
               <span className="font-serif italic font-normal text-white">
-                Managing
+                Frontend
               </span>
             </h1>
 
@@ -82,7 +82,6 @@ export const Hero = () => {
             <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
               and deployment of modern web applications in total autonomy.
               Specialized in translating UI mockups into functional, high-performance, and user experience-centric interfaces,
-              while managing data in the background.
             </p>
           </div>
 

@@ -1,4 +1,5 @@
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { useState } from 'react';
 import { MagicButton } from "@/assets/MagicButton.jsx";
 
 const contactInfo = [
@@ -25,18 +26,91 @@ const contactInfo = [
 
 
 export const Contact = () => {
-  // const [formData, setFormData] = useState ({
-  //   name: "",
-  //   email: "",
-  //   message: ""
-  // })
+  const [status, setStatus] = useState({
+    type: "",
+    message: "",
+  });
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  // }
+  const [isSending, setIsSending] = useState(false);
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    // Save the form reference before the async operation
+    const form = event.currentTarget;
+
+    const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
+
+    if (!accessKey) {
+      setStatus({
+        type: "error",
+        message: "Le formulaire n'est pas encore configuré.",
+      });
+      return;
+    }
+
+    setIsSending(true);
+    setStatus({
+      type: "",
+      message: "",
+    });
+
+    const formData = new FormData(form);
+
+    formData.append("access_key", accessKey);
+    formData.append(
+      "subject",
+      "Nouveau message depuis le portfolio"
+    );
+    formData.append(
+      "from_name",
+      "Portfolio contact form"
+    );
+
+    try {
+      const response = await fetch(
+        "https://api.web3forms.com/submit",
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
+
+      const result = await response.json();
+
+      console.log("Web3Forms response:", result);
+
+      if (!response.ok || !result.success) {
+        throw new Error(
+          result.message || "Submission failed"
+        );
+      }
+
+      setStatus({
+        type: "success",
+        message: "Message envoyé avec succès !",
+      });
+
+      // Use the saved form reference
+      form.reset();
+    } catch (error) {
+      console.error("Erreur d'envoi :", error);
+
+      setStatus({
+        type: "error",
+        message: "Une erreur est survenue. Réessayez.",
+      });
+    } finally {
+      setIsSending(false);
+    }
+  };
+
+  console.log(import.meta.env.VITE_WEB3FORMS_ACCESS_KEY);
+
+
   return (
     <section
-      id="testimonials"
+      id="contact"
       className="py-32 relative overflow-hidden">
       <div className='absolute top-0 left-0 w-full h-full'>
         <div className='absolute top-1/2 left-1/2 w-[800px] h-[800px] bg-primary/5 rounded-full blur-3xl ' />
@@ -63,18 +137,15 @@ export const Contact = () => {
 
         <div className='grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto'>
           <div className='glass p-8 rounded-3xl border border-primary/30 animate-fade-in delay-300'>
-            <form className='space-y-6'>
+            <form className='space-y-6' onSubmit={handleSubmit}>
               <div>
                 <label
                   htmlFor='name'
                   className='block text-sm font-medium mb-2'>Name</label>
                 <input id='name' type='text'
+                  name='name'
                   required
                   placeholder='Your name...'
-                  // value={formData.name}
-                  // onChange={(e) => 
-                  //   setFormData({ ...formData, name: e.target.value})
-                  // }
                   className='w-full px-4 py-3 bg-surgace rounded-xl border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all'
                 />
               </div>
@@ -84,12 +155,11 @@ export const Contact = () => {
                   htmlFor='email'
                   className='block text-sm font-medium mb-2'>Email</label>
                 <input
+                  id='email'
+                  name='email'
+                  type='email'
                   required
                   placeholder='Your@gmail.com...'
-                  // value={formData.email}
-                  // onChange={(e) => 
-                  //   setFormData({ ...formData, email: e.target.value})
-                  // }
                   className='w-full px-4 py-3 bg-surgace rounded-xl border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all'
                 />
               </div>
@@ -99,21 +169,26 @@ export const Contact = () => {
                   htmlFor='message'
                   className='block text-sm font-medium mb-2'>Message</label>
                 <textarea
+                  id='message'
+                  name='message'
                   rows={5}
                   required
-                  // value={formData.message}
-                  // onChange={(e) => 
-                  //   setFormData({ ...formData, message: e.target.value})
-                  // }
                   placeholder='Your Message...'
                   className='w-full px-4 py-3 bg-surgace rounded-xl border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all resize-none'
                 />
               </div>
 
-              <MagicButton className="w-full flex justify-center gap-3" type='submit' size="lg">
-                Send Message
+              <MagicButton className="w-full flex justify-center gap-3" type='submit' size="lg" disabled={isSending}>
+                {isSending ? 'Sending...' : 'Send Message'}
                 <Send />
               </MagicButton>
+
+              {status.message && (
+                <p className={`${status.type === "success" ? "success-message" : "error-message"} bg-surface/50 p-3 rounded-lg mt-4 text-center`}>
+                  {status.message}
+                </p>
+              )}
+
 
             </form>
           </div>
