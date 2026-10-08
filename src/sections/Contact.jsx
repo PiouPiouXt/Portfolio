@@ -18,7 +18,7 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "Location",
-    value: "Antananarivo",
+    value: "Antananarivo, Madagascar",
     href: "#"
   },
 
@@ -26,6 +26,7 @@ const contactInfo = [
 
 
 export const Contact = () => {
+  let isAvailable = true;
   const [status, setStatus] = useState({
     type: "",
     message: "",
@@ -221,15 +222,25 @@ export const Contact = () => {
             </div>
 
             {/* Availability Card */}
-            <div className="glass rounded-3xl p-8 border border-primary/30">
+            <div className={`glass rounded-3xl p-8 border ${isAvailable ? 'border-primary/30' : 'border-red-500'}`}>
               <div className="flex items-center gap-3 mb-4">
-                <span className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
-                <span className="font-medium">Currently Available</span>
+                <span className={`w-3 h-3 ${isAvailable ? 'bg-green-500' : 'bg-red-500'} rounded-full animate-pulse`} />
+                <span className="font-medium">
+                  {isAvailable ? "Currently Available" : "Currently Unavailable"}
+                </span>
               </div>
-              <p className="text-muted-foreground text-sm">
-                I'm currently open to new opportunities and exciting projects.
-              </p>
+              {isAvailable ?
+                <p className="text-muted-foreground text-sm">
+                  I'm currently open to new opportunities and exciting projects.
+                </p>
+                :
+                <p className="text-muted-foreground text-sm">
+                  Unfortunately, I'm currently unavalaible right now, I'll change status later if i'm free again
+                </p>
+              }
             </div>
+
+
           </div>
         </div>
       </div>

@@ -1,9 +1,9 @@
-import {Cat, PencilSparkles, Bird} from "lucide-react";
+import { Github } from "../assets/icons/Github";
+import { Linkedln } from "../assets/icons/Linkedln"
 
 const socialLinks = [
-  { icon: Cat, href: "#", label: "GitHub" },
-  { icon: PencilSparkles, href: "#", label: "LinkedIn" },
-  { icon: Bird, href: "#", label: "Twitter" },
+  { icon: Github, href: "#", label: "GitHub" },
+  { icon: Linkedln, href: "#", label: "LinkedIn" },
 ];
 
 const footerLinks = [
@@ -17,16 +17,16 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="py-12 border-t border-border">
+    <footer className="flex justify-center items-center py-12 border-t border-border">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           {/* Logo & Copyright */}
           <div className="text-center md:text-left">
             <a href="#" className="text-xl font-bold tracking-tight">
-              PM<span className="text-primary">.</span>
+              Piou<span className="text-primary">.</span>
             </a>
             <p className="text-sm text-muted-foreground mt-2">
-              © {currentYear} Pedro Machado. All rights reserved.
+              © {currentYear} Razakariasa Tsiresy. All rights reserved.
             </p>
           </div>
 

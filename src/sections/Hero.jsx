@@ -1,6 +1,8 @@
 import { useMemo } from 'react';
 import { Button } from "@/components/Button";
-import { ArrowRight, Cat, Send, ChevronDown, Download } from 'lucide-react';
+import { ArrowRight, ChevronDown, Download } from 'lucide-react';
+import { Github } from "../assets/icons/Github";
+import { Linkedln } from "../assets/icons/Linkedln"
 import { MagicButton } from "@/assets/MagicButton.jsx";
 
 const skills = [
@@ -103,8 +105,8 @@ export const Hero = () => {
             <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
               <span className="text-sm text-muted-foreground">Follow me: </span>
               {[
-                { icon: Cat, href: "#" },
-                { icon: Send, href: "#" },
+                { icon: Github, href: "#" },
+                { icon: Linkedln, href: "#" },
               ].map((social, idx) => (
                 <a
                   key={idx}

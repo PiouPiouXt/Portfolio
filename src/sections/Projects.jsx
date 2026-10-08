@@ -1,4 +1,5 @@
-import { ArrowUpRight, Cat } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
+import { Github } from '../assets/icons/Github'
 // import { MagicButton } from "@/assets/MagicButton.jsx"
 
 const projects = [
@@ -7,7 +8,6 @@ const projects = [
     description: "A simple electricity bill calculator that calculates the bill based on the units consumed.",
     image: "/projects/fact_electricity.PNG",
     tags: ["React", "Css", "JavaScript"],
-    link: "#",
     github: "https://github.com/PiouPiouXt/Fact-Electricity.git"
   },
   {
@@ -15,7 +15,6 @@ const projects = [
     description: "A simple e-commerce website built within my React tutorial with #supersimpledev.",
     image: "/projects/e_commerce.PNG",
     tags: ["React", "Css", "JavaScript"],
-    link: "#",
     github: "https://github.com/PiouPiouXt/Ecommerce-Projects.git"
   },
   {
@@ -23,7 +22,6 @@ const projects = [
     description: "Making this portofolio website using React, Tailwind CSS, and Vite.",
     image: "/projects/Portfolio.PNG",
     tags: ["React", "Tailwind CSS", "Vite"],
-    link: "#",
     github: "https://github.com/PiouPiouXt/Portfolio.git"
   },
   {
@@ -31,7 +29,6 @@ const projects = [
     description: "restaurant management system built with React Typescript.",
     image: "/projects/Restaurant_manager.PNG",
     tags: ["React", "Typescript", "Css"],
-    link: "#",
     github: "https://github.com/PiouPiouXt/Restaurant-manager.git"
   }
 
@@ -79,11 +76,8 @@ export const Projects = () => {
 
                 {/* Overlay Links */}
                 <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 duration-300">
-                  <a href={project.link} className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all">
-                    <ArrowUpRight className="w-5 h-5" />
-                  </a>
                   <a href="#" className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all">
-                    <Cat className="w-5 h-5" />
+                    <Github className="w-5 h-5" />
                   </a>
                 </div>
               </div>
