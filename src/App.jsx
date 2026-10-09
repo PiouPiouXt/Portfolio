@@ -1,4 +1,5 @@
 import { Hero } from "@/sections/Hero"
+import { ResetScrollButton } from "@/components/ResetScrollButton"
 import { About } from "@/sections/About"
 import { Projects } from "@/sections/Projects"
 import { Experience } from "@/sections/Experience"
@@ -13,6 +14,7 @@ function App() {
     <div className="min-h-screen overflow-x-hidden">
       <Navbar />
       <main>
+        <ResetScrollButton />
         <Hero />
         <About />
         <Projects />

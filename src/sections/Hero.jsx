@@ -90,15 +90,27 @@ export const Hero = () => {
 
             {/* CTA */}
             <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
-              <Button size="lg">
-                <a href="#contact">
+
+              {/* Contact Button */}
+              <a href="#contact">
+                <Button size="lg" href="#contact">
                   Contact Me
-                </a> <ArrowRight />
-              </Button>
-              <MagicButton className="flex gap-3">
-                <Download className="w-5 h-5" />
-                Download CV
-              </MagicButton>
+                  <ArrowRight />
+                </Button>
+              </a>
+
+              {/* Download Button */}
+
+              <a
+                href="/CV_Frontend.pdf"
+                download="CV_Frontend.pdf"
+                className='flex flex-cols'
+              >
+                <MagicButton className="flex gap-3">
+                  <Download className="w-5 h-5" />
+                  Download CV
+                </MagicButton>
+              </a>
             </div>
 
             {/* Social links */}
@@ -165,7 +177,7 @@ export const Hero = () => {
           <ChevronDown className="w-6 h-6 animate-bounce" />
         </a>
       </div>
-    </section>
+    </section >
   )
 }
 
