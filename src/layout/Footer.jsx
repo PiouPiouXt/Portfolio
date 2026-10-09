@@ -2,8 +2,8 @@ import { Github } from "../assets/icons/Github";
 import { Linkedln } from "../assets/icons/Linkedln"
 
 const socialLinks = [
-  { icon: Github, href: "#", label: "GitHub" },
-  { icon: Linkedln, href: "#", label: "LinkedIn" },
+  { icon: Github, href: "https://github.com/PiouPiouXt", label: "GitHub" },
+  { icon: Linkedln, href: "https://www.linkedin.com/in/tsiresy-razak-351b85440", label: "LinkedIn" },
 ];
 
 const footerLinks = [
@@ -17,7 +17,7 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="flex justify-center items-center py-12 border-t border-border">
+    <footer className="flex justify-center items-center py-12 border-t border-border pr-10">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           {/* Logo & Copyright */}
