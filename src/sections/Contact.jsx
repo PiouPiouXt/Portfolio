@@ -45,7 +45,7 @@ export const Contact = () => {
     if (!accessKey) {
       setStatus({
         type: "error",
-        message: "Le formulaire n'est pas encore configuré.",
+        message: "The form is not yet configured.",
       });
       return;
     }
@@ -89,7 +89,7 @@ export const Contact = () => {
 
       setStatus({
         type: "success",
-        message: "Message envoyé avec succès !",
+        message: "Message sent successfully! Thank you for reaching out.",
       });
 
       // Use the saved form reference
@@ -99,7 +99,7 @@ export const Contact = () => {
 
       setStatus({
         type: "error",
-        message: "Une erreur est survenue. Réessayez.",
+        message: "Something went wrong while sending the message. Please try again later.",
       });
     } finally {
       setIsSending(false);

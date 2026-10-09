@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { ChevronUp } from 'lucide-react';
 
 export function ResetScrollButton() {
   const [isVisible, setIsVisible] = useState(false);
@@ -79,7 +80,7 @@ export function ResetScrollButton() {
       </svg>
 
       {/* Icône Flèche */}
-      <span className="text-lg font-bold z-10">↑</span>
+      <ChevronUp className="w-6 h-6" />
     </button>
   );
 }
