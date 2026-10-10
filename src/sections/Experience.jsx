@@ -3,7 +3,7 @@ const experiences = [
     period: "2025 - Present",
     company: "Ge-it University",
     description: "Currently pursuing a Bachelor's degree in Computer Science, focusing on software development, algorithms, and data structures. Engaged in various projects that enhance my coding skills and problem-solving abilities.",
-    technologies: ["React", "JavaScript", "MySQL"],
+    technologies: ["React", "JavaScript", "MySQL", "PHP", "C", "HTML", "CSS"],
     current: true,
   },
   {
@@ -11,7 +11,7 @@ const experiences = [
     period: "2025 - Present",
     company: "Self-Learning",
     description: "Learning front-end developer and introducing to back-end by my own",
-    technologies: ["React", "JavaScript", "MySQL"],
+    technologies: ["React", "Advanced React", "JavaScript", "TypeScript", "Tailwind CSS"],
     current: true,
   }
 ]

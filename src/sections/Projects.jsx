@@ -4,11 +4,11 @@ import { Github } from "@/assets/icons/Github.jsx"
 
 const projects = [
   {
-    title: "Electricity Bill Calculator",
-    description: "A simple electricity bill calculator that calculates the bill based on the units consumed.",
-    image: "/projects/fact_electricity.PNG",
-    tags: ["React", "Css", "JavaScript"],
-    github: "https://github.com/PiouPiouXt/Fact-Electricity.git"
+    title: "Restaurant manager",
+    description: "restaurant management system built with React Typescript.",
+    image: "/projects/Restaurant_manager.PNG",
+    tags: ["React", "Typescript", "Css"],
+    github: "https://github.com/PiouPiouXt/Restaurant-manager.git"
   },
   {
     title: "Simple e-commerce",
@@ -18,20 +18,19 @@ const projects = [
     github: "https://github.com/PiouPiouXt/Ecommerce-Projects.git"
   },
   {
+    title: "Electricity Bill Calculator",
+    description: "A simple electricity bill calculator that calculates the bill based on the units consumed.",
+    image: "/projects/fact_electricity.PNG",
+    tags: ["React", "Css", "JavaScript"],
+    github: "https://github.com/PiouPiouXt/Fact-Electricity.git"
+  },
+  {
     title: "My Portfolio",
     description: "Making this portofolio website using React, Tailwind CSS, and Vite.",
     image: "/projects/Portfolio.PNG",
     tags: ["React", "Tailwind CSS", "Vite"],
     github: "https://github.com/PiouPiouXt/Portfolio.git"
-  },
-  {
-    title: "Restaurant manager",
-    description: "restaurant management system built with React Typescript.",
-    image: "/projects/Restaurant_manager.PNG",
-    tags: ["React", "Typescript", "Css"],
-    github: "https://github.com/PiouPiouXt/Restaurant-manager.git"
   }
-
 ];
 
 export const Projects = () => {

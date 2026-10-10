@@ -1,20 +1,20 @@
-import { Heart, Code2, Clock, Users } from "lucide-react";
+import { Code2, Brain, MonitorSmartphoneIcon, Puzzle } from "lucide-react";
 
 const highlights = [
   {
     icon: Code2,
-    title: "Code with Love",
-    description: "I write clean, efficient, and maintainable code that is easy to read and understand."
+    title: "Clean & Maintainable Code",
+    description: "I build organized React components with reusable logic and clear TypeScript types, making applications easier to understand and maintain."
   },
   {
-    icon: Clock,
-    title: "Time Management",
-    description: "I prioritize tasks effectively, ensuring that projects are completed on time and within budget."
+    icon: MonitorSmartphoneIcon,
+    title: "Responsive User Interfaces",
+    description: "I turn designs into responsive web interfaces that adapt to different screen sizes while keeping usability and visual consistency in mind."
   },
   {
-    icon: Users,
-    title: "Collaboration",
-    description: "I work well with others, contributing to a positive and productive team environment."
+    icon: Puzzle,
+    title: "Practical Problem Solving",
+    description: "I break down requirements into manageable tasks, integrate APIs, and build practical frontend solutions that meet project needs."
   },
 ]
 
@@ -34,7 +34,7 @@ export const About = () => {
             </div>
 
             <h2 className="text-4xl md:text-5xl font-bold leading-tight animation-fade-in animation-delay-100 text-secondary-foreground">
-              <Heart className="inline-block w-14 h-14 md:w-16 md:h-16 px-4 px-4"></Heart>
+              <Brain className="inline-block w-14 h-14 md:w-16 md:h-16 px-4 px-4"></Brain>
               Turning Ideas
               <span className="font-serif italic font-normal text-white"> into Functional Web Experiences</span>
             </h2>
@@ -42,7 +42,7 @@ export const About = () => {
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
 
               <p>
-                I'm Piou, a Frontend Developer focused on React and TypeScript. I enjoy building modern web interfaces that combine thoughtful design with clean, maintainable code.
+                I'm Piou (Razakariasa Tsiresy), a Frontend Developer focused on React and TypeScript. I enjoy building modern web interfaces that combine thoughtful design with clean, maintainable code.
               </p>
               <p>
                 Through personal projects, I've developed hands-on experience with React Hooks, Context API, useReducer, custom hooks, React Router, and REST API integration.

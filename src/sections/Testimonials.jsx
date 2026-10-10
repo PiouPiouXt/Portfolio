@@ -5,8 +5,7 @@ import { useState } from 'react';
 const testimonials =
   [
     {
-      quote: "I don't have Freelance experience, but I have a lot of experience in the field of web development. I have been working on web development for 2 years now and I have a lot of experience in the field of web development. I have been working on web development for 2 years now and I have a lot of experience in the field of web development.",
-      author: "Me",
+      quote: "I don't have Freelance experience, but I have a lot of experience in the field of web development. I have been working on web development for 1 year", author: "Me",
       role: "Frontend Developer",
       avatar: "/profile-picture.jpg"
     },
