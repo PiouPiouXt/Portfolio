@@ -1,17 +1,19 @@
 const experiences = [
   {
     period: "2025 - Present",
-    company: "Ge-it University",
-    description: "Currently pursuing a Bachelor's degree in Computer Science, focusing on software development, algorithms, and data structures. Engaged in various projects that enhance my coding skills and problem-solving abilities.",
-    technologies: ["React", "JavaScript", "MySQL", "PHP", "C", "HTML", "CSS"],
+    title: "Academic Education",
+    company: "GE-IT University",
+    description: "Currently pursuing a Bachelor's degree in Computer Science, developing a foundation in programming, algorithms, and software development.",
+    technologies: ["Comuter Science", "Programming", "Algorithms"],
     current: true,
   },
   {
 
     period: "2025 - Present",
-    company: "Self-Learning",
-    description: "Learning front-end developer and introducing to back-end by my own",
-    technologies: ["React", "Advanced React", "JavaScript", "TypeScript", "Tailwind CSS"],
+    title: "Independent Learning & Projects",
+    company: "Frontend Development",
+    description: "Building practical web projects while developing my skills in React and TypeScript, with a focus on component architecture, responsive interfaces, routing, and API integration.",
+    technologies: ["React", "TypeScript", "JavaScript", "Tailwind CSS", "REST APIs"],
     current: true,
   }
 ]
@@ -26,18 +28,18 @@ export const Experience = () => {
       <div className="max-w-3xl mb-16">
         <span className="
         text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in
-        ">Learning Roadmap</span>
+        ">MY JOURNEY</span>
         <h2 className="
         text-4xl md:text-5xl font-bold leading-tight animation-fade-in animation-delay-100 text-secondary-foreground
         ">
-          Experience I got <span className="font-serif italic font-normal text-white">
+          My Journey as a <span className="font-serif italic font-normal text-white">
             {" "}
-            From learning.</span>
+            Frontend Developer.</span>
         </h2>
 
         <p className="text-muted-foreground animate-fade-in animation-delay-200">
-          A timeline of my learning journey, showcasing the skills and technologies I've acquired along the way.
-          Each experience represents a step forward in my growth as a developer.
+          From academic studies to hands-on projects, I've been building my skills in React and TypeScript,
+          focusing on modern web interfaces, reusable components, and practical frontend development.
         </p>
 
       </div>
@@ -62,7 +64,8 @@ export const Experience = () => {
 
                 <div className="{`glass p-6 rounded-2xl border border-primary/30 hover:border-primary/50 transition-all duration-500`}">
                   <span className="tex-sm text-primary font-medium">{exp.period}</span>
-                  <h3 className="text-xl font-semibold mt-2">{exp.company}</h3>
+                  <h3 className="text-xl font-bold mt-2">{exp.title}</h3>
+                  <h5 className="text-l font-semibold mt-2">{exp.company}</h5>
                   <p className="text-sm text-muted-foreground mt-4">{exp.description}</p>
 
                   <div className={`flex flex-wrap gap-2 mt-4 ${idx % 2 === 0

@@ -42,17 +42,32 @@ export const About = () => {
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
 
               <p>
-                I'm Piou (Razakariasa Tsiresy), a Frontend Developer focused on React and TypeScript. I enjoy building modern web interfaces that combine thoughtful design with clean, maintainable code.
+                <span className="font-semibold text-primary-foreground">
+                  I'm Piou (Razakariasa Tsiresy)
+                </span>, a Frontend Developer focused on React and TypeScript. I enjoy building modern web interfaces that combine thoughtful design with clean, maintainable code.
               </p>
               <p>
-                Through personal projects, I've developed hands-on experience with React Hooks, Context API, useReducer, custom hooks, React Router, and REST API integration.
+                Through personal projects, I've developed hands-on experience with
+                <span className="font-semibold text-primary-foreground">
+                  {" "}React Hooks, Context API, useReducer, custom hooks, React Router, and REST API integration.
+                </span>
               </p>
               <p>
                 I can help turn Figma designs into responsive interfaces, build reusable UI components, integrate APIs, and improve existing React applications.</p>
               <p>
-                My approach is simple: understand the requirements, write organized code, pay attention to responsive design, and build interfaces that are easy to use and maintain.</p>
+                <span className="font-semibold text-primary-foreground">
+                  My approach is simple:{" "}
+                </span>
+                understand the requirements, write organized code, pay attention to responsive design, and build interfaces that are easy to use and maintain.
+              </p>
+
               <p>
-                I'm continuously improving my skills and looking for opportunities to collaborate on meaningful web projects and deliver practical solutions.</p>
+                I'm continuously improving my skills and looking for
+                <span className="font-semibold text-primary-foreground">
+                  {" "} opportunities to collaborate on meaningful web projects and deliver practical solutions.
+                </span>
+
+              </p>
 
               {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sint commodi, aliquam sunt ducimus qui! Quod optio quas tenetur consequuntur alias inventore unde natus iste similique, tempora rem soluta aliquam.</p>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sint commodi, aliquam sunt ducimus qui! Quod optio quas tenetur consequuntur alias inventore unde natus iste similique, tempora rem soluta aliquam.</p>

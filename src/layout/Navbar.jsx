@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Download, Menu, X } from "lucide-react";
 const navLinks = [
   { href: "#about", label: "About" },
   { href: "#projects", label: "Projects" },
@@ -44,16 +44,24 @@ export const Navbar = () => {
           </div>
         </div>
 
-        {/*  CTA button */}
+        {/*  Download and CTA button */}
         <div className="hidden md:block">
-          <a size='sm' href="#contact" className="text-sm text-primary-foreground rounded-full bg-primary px-6 py-3 transition-colors"
+          <a size='sm' className="text-sm text-primary-foreground rounded-full bg-primary px-6 py-3 transition-colors"
+            href="CV_Frontend.pdf"
+            download="CV_Frontend.pdf"
+          >
+            <Download size={16} className="inline-block mr-2" />
+            Download CV
+          </a>
+
+          {/* <a size='sm' href="#contact" className="text-sm text-primary-foreground rounded-full bg-primary px-6 py-3 transition-colors"
             onClick={(e) => {
               e.preventDefault();
               document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
             }}
           >
             Contact Me
-          </a>
+          </a> */}
         </div>
 
         {/* Mobile Menu Button */}
