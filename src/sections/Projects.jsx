@@ -1,6 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
-import { Github } from '../assets/icons/Github'
-// import { MagicButton } from "@/assets/MagicButton.jsx"
+import { MagicButton } from "@/assets/MagicButton.jsx"
+import { Github } from "@/assets/icons/Github.jsx"
 
 const projects = [
   {
@@ -35,6 +35,7 @@ const projects = [
 ];
 
 export const Projects = () => {
+
   return (
     <section id="projects" className="py-32 relative overflow-hidden">
       {/* BG glows */}
@@ -48,7 +49,7 @@ export const Projects = () => {
             Projects that
             <span className="font-serif italic font-normal text-white">
               {" "}
-              make an impact.</span>
+              i worked with.</span>
           </h2>
           <p className="text-muted-foreground animate-fade-in animation-delay-200">
             A selection of my recent coding learning, front-end web from tutorial
@@ -115,13 +116,18 @@ export const Projects = () => {
         </div>
 
         {/* View all CTA */}
-        {/* <div className="text-center mt-12 animate-fade-in animation-delay-500">
-          <MagicButton>
-            View all projects
-          </MagicButton>
-        </div> */}
+        <div className=" text-center mt-12 animate-fade-in animation-delay-500">
+          <a href="https://github.com/PiouPiouXt" target="_blank" rel="noopener noreferrer"
+            className="flex items-center justify-center gap-2">
+            <MagicButton className="flex items-center justify-center gap-2
+            ">
+              View More Projects
+              <Github className="w-5 h-5 ml-2" />
+            </MagicButton>
+          </a>
+        </div>
       </div>
-    </section>
+    </section >
   )
 }
 
