@@ -35,28 +35,24 @@ export const About = () => {
 
             <h2 className="text-4xl md:text-5xl font-bold leading-tight animation-fade-in animation-delay-100 text-secondary-foreground">
               <Heart className="inline-block w-14 h-14 md:w-16 md:h-16 px-4 px-4"></Heart>
-              Coding with Love,
-              <span className="font-serif italic font-normal text-white"> and transform your idea.</span>
+              Turning Ideas
+              <span className="font-serif italic font-normal text-white"> into Functional Web Experiences</span>
             </h2>
 
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
 
               <p>
-                Passionate student and web developer, I specialize in the integration of UI/UX mockups into fluid and interactive web interfaces.
+                I'm Piou, a Frontend Developer focused on React and TypeScript. I enjoy building modern web interfaces that combine thoughtful design with clean, maintainable code.
               </p>
               <p>
-                My goal? Take your designs (Figma, Adobe XD) and transform them into clean, structured, and performant code using the React ecosystem.
+                Through personal projects, I've developed hands-on experience with React Hooks, Context API, useReducer, custom hooks, React Router, and REST API integration.
               </p>
               <p>
-                My philosophy is based on two essential pillars: listening carefully to your needs and effective code. Whether it's bringing a custom-made
-                component to life or structuring a complete application, 
-              </p>
+                I can help turn Figma designs into responsive interfaces, build reusable UI components, integrate APIs, and improve existing React applications.</p>
               <p>
-                I make sure that the result is as visually beautiful as it is technically robust.
-              </p>
+                My approach is simple: understand the requirements, write organized code, pay attention to responsive design, and build interfaces that are easy to use and maintain.</p>
               <p>
-                Rigorous and autonomous, I put my university projects and my skills at your service to make your ideas a reality.
-              </p>
+                I'm continuously improving my skills and looking for opportunities to collaborate on meaningful web projects and deliver practical solutions.</p>
 
               {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sint commodi, aliquam sunt ducimus qui! Quod optio quas tenetur consequuntur alias inventore unde natus iste similique, tempora rem soluta aliquam.</p>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sint commodi, aliquam sunt ducimus qui! Quod optio quas tenetur consequuntur alias inventore unde natus iste similique, tempora rem soluta aliquam.</p>

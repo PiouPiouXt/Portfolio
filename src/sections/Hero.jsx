@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { Button } from "@/components/Button";
-import { ArrowRight, ChevronDown, Download } from 'lucide-react';
+import { ChevronRight, ChevronDown } from 'lucide-react';
 import { Github } from "../assets/icons/Github";
 import { Linkedln } from "../assets/icons/Linkedln"
 import { MagicButton } from "@/assets/MagicButton.jsx";
@@ -66,25 +66,24 @@ export const Hero = () => {
             <div className="animate-fade-in">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                Frontend Developer
+                Frontend Developer · React & TypeScript
               </span>
             </div>
 
             {/* Headline */}
             <div className="space-y-4">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight animate-fade-in animation-delay-100">
-                <span className="text-primary glow-text text-3xl md:text-4xl lg:text-5xl">React </span>Developer
+                <span className="text-primary glow-text text-3xl md:text-4xl lg:text-5xl">Building </span>Modern Web
                 <br />
                 <span className="font-serif italic font-normal text-white">
-                  Frontend
+                  Experiences with React
                 </span>
               </h1>
 
 
 
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                and deployment of modern web applications in total autonomy.
-                Specialized in translating UI mockups into functional, high-performance, and user experience-centric interfaces,
+                I build modern, responsive web interfaces using React and TypeScript. I turn UI designs into functional web experiences, with a focus on reusable components, clean code, and user-friendly design.
               </p>
             </div>
 
@@ -95,27 +94,24 @@ export const Hero = () => {
               <a href="#contact">
                 <Button size="lg" href="#contact">
                   Contact Me
-                  <ArrowRight />
+                  <ChevronRight />
                 </Button>
               </a>
 
               {/* Download Button */}
 
               <a
-                href="/CV_Frontend.pdf"
-                download="CV_Frontend.pdf"
-                className='flex flex-cols'
+                href="#projects"
               >
                 <MagicButton className="flex gap-3">
-                  <Download className="w-5 h-5" />
-                  Download CV
+                  View Projects
                 </MagicButton>
               </a>
             </div>
 
             {/* Social links */}
             <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
-              <span className="text-sm text-muted-foreground">Follow me: </span>
+              <span className="text-sm text-muted-foreground">Find me on: </span>
               {[
                 { icon: Github, href: "https://github.com/PiouPiouXt" },
                 { icon: Linkedln, href: "https://www.linkedin.com/in/tsiresy-razak-351b85440" },
